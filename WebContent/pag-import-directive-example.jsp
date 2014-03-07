@@ -1,5 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!-- page import directive -->
+<%@ page import="java.util.*" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,9 +10,9 @@
 <title>jsp.ourownjava.com</title>
 </head>
 <body>
-
-<!-- scriptlet example -->
-
-<%out.println("Current time is "+new java.util.Date()); %>
+<%
+    Date date = new Date();
+%>
+Current time is : <%= date %>
 </body>
 </html>
