@@ -6,9 +6,6 @@
 <title>jsp.ourownjava.com</title>
 </head>
 <body>
-
-<!-- scriptlet example -->
-
-<%out.println("Current time is "+new java.util.Date()); %>
+<h4>This is the header.jsp</h4>
 </body>
 </html>

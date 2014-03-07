@@ -6,9 +6,7 @@
 <title>jsp.ourownjava.com</title>
 </head>
 <body>
-
-<!-- scriptlet example -->
-
-<%out.println("Current time is "+new java.util.Date()); %>
+<!-- include directive example -->
+<%@ include file="header.jsp" %>
 </body>
 </html>
