@@ -6,16 +6,11 @@
 <title>jsp.ourownjava.com</title>
 </head>
 <body>
-
-<!-- jsp declaration example-->
-<%! 
-public int sum(final int x, final int y){
-	return x + y;
-}
+<%
+    final String who;
+    who = request.getParameter("who");
 %>
 
-<!-- calling method in scriptlet -->
-<% out.println("sum of 10, 10 is "+sum(10, 10));%>
-
+<h4>Hello <%= who %>!</h4>
 </body>
 </html>
