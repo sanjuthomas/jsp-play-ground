@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns="http://java.sun.com/xml/ns/javaee" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+    
+  <display-name>jsp.ourownjava.com</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- servlet context parameters, application wide, jsp implicit object 'application' would make available 
+  these parameters, class is javax.servlet.ServletContext -->
+  <context-param>
+ 	 <param-name>param1</param-name>
+ 	 <param-value>param1Value</param-value>
+  </context-param>
+  
+  <!-- servlet init parameter, for this particlar servlet, jsp implicit object 'config' would make available 
+  these parameters, class is javax.servlet.ServletConfig -->
+  <servlet>
+ 	 <servlet-name>jspImplicitObjectApplicationExample</servlet-name>
+ 	 <jsp-file>/jsp-implicit-object-application-example.jsp</jsp-file>
+ 	 <init-param>
+    	<param-name>servletConfigParm1</param-name>
+   		<param-value>servletConfigParam1Value</param-value>
+ 	 </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+ 	 <servlet-name>jspImplicitObjectApplicationExample</servlet-name>
+  	 <url-pattern>/jsp-implicit-object-application-example.jsp</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
