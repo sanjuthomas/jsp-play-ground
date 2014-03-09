@@ -16,11 +16,22 @@
  	 <param-value>param1Value</param-value>
   </context-param>
   
-  <!-- servlet init parameter, for this particlar servlet, jsp implicit object 'config' would make available 
-  these parameters, class is javax.servlet.ServletConfig -->
   <servlet>
  	 <servlet-name>jspImplicitObjectApplicationExample</servlet-name>
  	 <jsp-file>/jsp-implicit-object-application-example.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+ 	 <servlet-name>jspImplicitObjectApplicationExample</servlet-name>
+  	 <url-pattern>/jsp-implicit-object-application-example.jsp</url-pattern>
+  </servlet-mapping>
+  
+  
+   <!-- servlet init parameter, for this particular servlet, jsp implicit object 'config' would make available 
+  these parameters, class is javax.servlet.ServletConfig -->
+  <servlet>
+ 	 <servlet-name>jspImplicitObjectConfigExample</servlet-name>
+ 	 <jsp-file>/jsp-implicit-object-config-example.jsp</jsp-file>
  	 <init-param>
     	<param-name>servletConfigParm1</param-name>
    		<param-value>servletConfigParam1Value</param-value>
@@ -28,8 +39,9 @@
   </servlet>
   
   <servlet-mapping>
- 	 <servlet-name>jspImplicitObjectApplicationExample</servlet-name>
-  	 <url-pattern>/jsp-implicit-object-application-example.jsp</url-pattern>
+ 	 <servlet-name>jspImplicitObjectConfigExample</servlet-name>
+  	 <url-pattern>/jsp-implicit-object-config-example.jsp</url-pattern>
   </servlet-mapping>
+  
   
 </web-app>
