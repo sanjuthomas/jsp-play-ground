@@ -21,7 +21,7 @@
 	 <%session.setAttribute("who", "ourownjava.com"); %>
 
 	 <!-- how to instruct the browser to redirect -->
-	 <% response.sendRedirect("redirected.jsp");%>
+      <% response.sendRedirect("redirected.jsp");%> 
 	 
 </body>
 </html>
