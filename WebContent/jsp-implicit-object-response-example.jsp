@@ -17,8 +17,11 @@
 	<%final Cookie cookie = new Cookie("token", "tokenValue");
 	 response.addCookie(cookie); %>
 	 
+	 <!-- how to add an attribute to session -->
+	 <%session.setAttribute("who", "ourownjava.com"); %>
+
 	 <!-- how to instruct the browser to redirect -->
-	 <% %>
+	 <% response.sendRedirect("redirected.jsp");%>
 	 
 </body>
 </html>
