@@ -8,6 +8,7 @@
 <body>
 
 	<!-- jsp implicit object pageContext example -->
+	Tomcat implementation of pageContext :  <% out.println(pageContext.getClass().getCanonicalName()); %> <br/>
 	
 	<!-- how to set attribute into jsp implicit object pageContext -->
 	<% pageContext.setAttribute("attribute1", "attribute1Value"); %>
