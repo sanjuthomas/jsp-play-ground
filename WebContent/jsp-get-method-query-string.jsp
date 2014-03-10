@@ -6,8 +6,6 @@
 <title>jsp.ourownjava.com</title>
 </head>
 <body>
-
 	Who : <%=request.getParameter("who")%>
-		
 </body>
 </html>
